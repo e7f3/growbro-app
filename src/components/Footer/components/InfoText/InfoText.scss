@@ -1,0 +1,9 @@
+.info-text {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 3px;
+}
+
+.info-text__subtitle {
+  font-weight: 600;
+}

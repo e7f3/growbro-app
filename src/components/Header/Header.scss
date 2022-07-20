@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+}
+
+.header__content {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center space-between;
+
+  padding: 54px 0 25px;
+
+  @media only screen and (max-width: 1375px) {
+    place-content: center;
+  }
+}
+
+.header__logo {
+  @media only screen and (max-width: 1375px) {
+    display: none;
+  }
+}
+
+.header__navigation {
+  @media only screen and (max-width: 1375px) {
+  }
+}

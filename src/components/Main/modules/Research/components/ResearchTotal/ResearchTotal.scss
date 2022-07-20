@@ -1,0 +1,48 @@
+.research-total {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  row-gap: 40px;
+
+  max-width: 635px;
+
+  @media only screen and (max-width: 900px) {
+    row-gap: 28px;
+    padding: 30px 20px 30px;
+    border-radius: 15px;
+    background-color: var(--white--70a);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 30px 10px 20px;
+  }
+}
+
+.research-total__title {
+  font-weight: 100;
+  .title {
+    line-height: 101px;
+
+    @media only screen and (max-width: 900px) {
+      line-height: 49px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-weight: 30px;
+      line-height: 37px;
+    }
+  }
+}
+
+.research-total__text-wrapper {
+  max-width: 590px;
+}
+
+.research-total__text-title {
+  margin: 30px 0;
+  font-weight: 600;
+
+  @media only screen and (max-width: 600px) {
+    margin: 20px 0;
+  }
+}

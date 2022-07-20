@@ -1,0 +1,133 @@
+.footer {
+  padding: 163px 0;
+  background-color: var(--lightgreen);
+
+  @media only screen and (max-width: 900px) {
+    padding: 75px 0 0;
+  }
+}
+
+.footer__content {
+  max-width: 952px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-weight: 100;
+  text-align: center;
+
+  .title {
+    @media only screen and (max-width: 900px) {
+      font-size: 30px;
+      line-height: 31px;
+    }
+  }
+}
+
+.footer__telegram-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 13px;
+
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 15px;
+  outline: 2px solid transparent;
+
+  background-color: var(--white--28a);
+
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  @media only screen and (max-width: 900px) {
+    padding: 3px 0;
+    column-gap: 4px;
+  }
+}
+
+.footer__telegram-link:hover {
+  outline: 2px solid var(--green);
+  color: var(--green);
+
+  .footer__telegram-icon {
+    fill: var(--green);
+  }
+}
+
+.footer__telegram-icon {
+  transition: all 0.2s ease-in;
+
+  @media only screen and (max-width: 900px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer__contacts {
+  padding: 64px 0 52px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+
+  row-gap: 14px;
+
+  text-align: center;
+
+  @media only screen and (max-width: 900px) {
+    padding: 28px 0 55px;
+  }
+}
+
+.footer__logos {
+  margin-top: 106px;
+  display: flex;
+  column-gap: 56px;
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 200px;
+    margin-bottom: 32px;
+    column-gap: 32px;
+    justify-content: center;
+  }
+}
+
+.footer__navigation {
+  display: none;
+
+  @media only screen and (max-width: 900px) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    place-content: center;
+    column-gap: 30px;
+
+    margin: 0 calc(-1 * var(--container-padding));
+    padding: 12px var(--container-padding) 70px;
+
+    background-color: var(--white);
+  }
+}
+
+.footer__navigation-link {
+  font-family: var(--font-family--primary);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: var(--font--dark);
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.footer__navigation-link-wrapper {
+  &:hover {
+    .footer__navigation-link {
+      color: var(--green);
+    }
+  }
+}
+
+.footer__navigation-link-wrapper:last-child {
+  display: none;
+}

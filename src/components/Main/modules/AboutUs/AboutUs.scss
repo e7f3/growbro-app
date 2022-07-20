@@ -1,0 +1,81 @@
+.about-us {
+  width: 100%;
+  min-height: 2671px;
+  background: var(--main-gradient--first), var(--main-gradient--second);
+  position: relative;
+
+  & * {
+    z-index: 2;
+  }
+
+  @media only screen and (max-width: 1515px) {
+    padding-bottom: 200px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    min-height: unset;
+
+    max-height: 1900px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    min-height: unset;
+    max-height: 1700px;
+  }
+}
+
+.about-us::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -200px;
+
+  height: 800px;
+
+  background-image: url(../../../../assets/images/about-us_background.png);
+  background-size: cover;
+  background-position: center bottom;
+
+  z-index: 1;
+
+  @media only screen and (max-width: 900px) {
+    bottom: -150px;
+    height: 500px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    bottom: -118px;
+    height: 335px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 473px;
+
+  height: 1450px;
+
+  background-image: url(../../../../assets/icons/about-us_background-leaves.svg);
+  background-size: cover;
+  background-position: top;
+
+  z-index: 0;
+}
+
+.about-us__content {
+  padding: 175px 0 398px;
+
+  @media only screen and (max-width: 1515px) {
+    padding: 50px 0 398px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 50px 0 0;
+  }
+}

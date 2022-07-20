@@ -1,0 +1,39 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.paragraph {
+  font-family: var(--font-family--primary);
+
+  &.paragraph--small {
+    font-size: var(--p--small);
+    line-height: var(--line-height--paragraph);
+  }
+
+  &.paragraph--medium {
+    font-size: var(--p--medium);
+    line-height: var(--line-height--paragraph);
+  }
+
+  &.paragraph--bold {
+    font-weight: 700;
+  }
+}
+
+.title {
+  font-family: var(--font-family--primary);
+
+  &.title--h1 {
+    font-size: var(--title--large);
+    line-height: var(--line-height--title-large);
+  }
+  &.title--h3 {
+    font-size: var(--title--medium);
+    line-height: var(--line-height--title-medium);
+  }
+}

@@ -1,0 +1,129 @@
+.our-benefits {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 70px;
+  padding: 148px 70px 0;
+
+  @media only screen and (max-width: 1375px) {
+    padding: 148px 25px 0;
+  }
+
+  @media only screen and (max-width: 900px) {
+    row-gap: 25px;
+    padding: 80px 10px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    row-gap: 10px;
+    padding: 40px 0 0;
+  }
+}
+
+.our-benefits__title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 20px;
+
+  @media only screen and (max-width: 600px) {
+    column-gap: 15px;
+  }
+}
+
+.our-benefits__title {
+  font-family: var(--font-family--secondary);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 134px;
+  color: var(--white);
+
+  cursor: default;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+.our-benefits__subtitle {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.our-benefits__benefits-list {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  row-gap: 49px;
+
+  @media only screen and (max-width: 1375px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: 900px) {
+    row-gap: 18px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    row-gap: 10px;
+  }
+}
+
+.our-benefits__benefit {
+  min-height: 175px;
+  @media only screen and (max-width: 900px) {
+    min-height: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    min-height: unset;
+    max-height: 75px;
+  }
+}
+
+.our-benefits__benefit-content {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--white--22a);
+  border-radius: 15px;
+  padding: 0 50px;
+
+  box-shadow: 0px 4px 4px var(--black--15a);
+
+  @media only screen and (max-width: 900px) {
+    padding: 13px 30px;
+    column-gap: 10px;
+  }
+}
+
+.our-benefits__benefit:last-child {
+  grid-column: 1 / -1;
+
+  .our-benefits__benefit-content {
+    width: calc(40% - 36px);
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1375px) {
+      width: auto;
+      margin: unset;
+    }
+  }
+
+  @media only screen and (max-width: 1375px) {
+  }
+}
+
+.our-benefits__benefit-text {
+  max-width: 360px;
+  font-weight: 700;
+  color: var(--white);
+}

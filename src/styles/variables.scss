@@ -1,0 +1,80 @@
+:root {
+  // Sizes
+  --max-container-width: 1510px;
+  --container-padding: 205px;
+
+  // Fonts
+  --font-family--primary: 'Montserrat', sans-serif;
+  --font-family--secondary: 'Comfortaa', cursive;
+  --font-family--logo-icon: 'Fredoka', sans-serif;
+
+  // Font sizes
+  --p--small: 18px;
+  --p--medium: 20px;
+
+  --title--medium: 30px;
+  --title--large: 100px;
+
+  // Line heights
+  --line-height--paragraph: 28px;
+  --line-height--title-medium: 28px;
+  --line-height--title-large: 122px;
+
+  // Colors
+  --green: #377724;
+  --green--80a: #377724cc;
+  --green--50a: #37772480;
+  --lightgreen: #d0db8b;
+  --font--dark: #06211c;
+  --white: #ffffff;
+  --white--70a: #ffffffb3;
+  --white--50a: #ffffff80;
+  --white--28a: #ffffff47;
+  --white--22a: #ffffff38;
+  --black: #000000;
+  --black--50a: #00000080;
+  --black--15a: #00000026;
+
+  --main-gradient--first: linear-gradient(
+    143.18deg,
+    #d9d9d900 30.99%,
+    #c5a607a1 54.28%,
+    #245a1499 118.73%
+  );
+  --main-gradient--second: linear-gradient(
+    180.62deg,
+    #d9d9d900 -1.88%,
+    #c5a607a1 24.46%,
+    #245a1499 104.44%
+  );
+}
+
+@media only screen and (max-width: 1919px) {
+  :root {
+    --container-padding: 55px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    // Font sizes
+
+    --p--small: 11px;
+    --p--medium: 12px;
+
+    --title--medium: 15px;
+    --title--large: 40px;
+
+    // Line heights
+
+    --line-height--paragraph: 19.5px;
+    --line-height--title-medium: 20px;
+    --line-height--title-large: 49px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --container-padding: 20px;
+  }
+}
