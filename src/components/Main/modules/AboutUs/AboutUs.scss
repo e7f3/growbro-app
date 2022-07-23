@@ -24,7 +24,7 @@
   }
 }
 
-.test {
+.about-us__bottom-img {
   position: absolute;
   left: 0;
   right: 0;
@@ -52,7 +52,7 @@
   }
 }
 
-.test::before {
+.about-us__bottom-img::before {
   position: absolute;
   content: '';
   bottom: 0;
@@ -67,7 +67,7 @@
   );
 }
 
-.test:after {
+.about-us__bottom-img:after {
   position: absolute;
   content: '';
   bottom: 0;

@@ -5,7 +5,6 @@ import Container from '../../../Container/Container'
 import MainInfo from './components/MainInfo/MainInfo'
 import OurBenefits from './components/OurBenefits/OurBenefits'
 import SecondaryInfo from './components/SecondaryInfo/SecondaryInfo'
-import Test from '../../../../assets/images/test.png'
 
 export default function AboutUs() {
   return (
@@ -17,7 +16,7 @@ export default function AboutUs() {
           <SecondaryInfo />
         </div>
       </Container>
-      <div className='test'></div>
+      <div className='about-us__bottom-img' />
     </section>
   )
 }
