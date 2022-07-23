@@ -15,6 +15,7 @@ export default function MainBanner() {
 
   return (
     <section className='main-banner'>
+      
       <Container>
         <div className='main-banner__content'>
           <div className='main-banner__logo'>

@@ -32,7 +32,7 @@
   background-image: url('../../../../assets/images/research_background.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom right;
+  background-position: bottom right calc((100vw - 1920px) / 2);
   z-index: 0;
 
   @media only screen and (max-width: 1515px) {

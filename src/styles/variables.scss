@@ -1,6 +1,6 @@
 :root {
   // Sizes
-  --max-container-width: 1510px;
+  --max-container-width: 1920px;
   --container-padding: 205px;
 
   // Fonts
@@ -9,16 +9,16 @@
   --font-family--logo-icon: 'Fredoka', sans-serif;
 
   // Font sizes
-  --p--small: 18px;
-  --p--medium: 20px;
+  --p--small: 1.1em;
+  --p--medium: 1.25em;
 
-  --title--medium: 30px;
-  --title--large: 100px;
+  --title--medium: 1.9em;
+  --title--large: 6.3em;
 
   // Line heights
-  --line-height--paragraph: 28px;
-  --line-height--title-medium: 28px;
-  --line-height--title-large: 122px;
+  --line-height--paragraph: 120%;
+  --line-height--title-medium: 100%;
+  --line-height--title-large: 122%;
 
   // Colors
   --green: #377724;

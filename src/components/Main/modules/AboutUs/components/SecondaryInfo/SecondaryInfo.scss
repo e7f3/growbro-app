@@ -15,7 +15,7 @@
 }
 
 .secondary-info__content {
-  max-height: 325px;
+  max-height: 20em;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -24,7 +24,7 @@
   column-gap: 32px;
 
   @media only screen and (max-width: 1515px) {
-    max-height: 500px;
+    max-height: 25em;
   }
 
   @media only screen and (max-width: 1050px) {
@@ -41,7 +41,7 @@
 }
 
 .secondary-info__info-text {
-  max-width: 400px;
+  max-width: 25em;
   color: var(--white);
 
   .title {
