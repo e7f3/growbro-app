@@ -5,6 +5,8 @@ import { useDataContext } from '../../../../hooks/useDataContext'
 import Container from '../../../Container/Container'
 import ResearchSteps from './components/ResearchSteps/ResearchSteps'
 import ResearchTotal from './components/ResearchTotal/ResearchTotal'
+import ResearchInfo from './components/ResearchInfo/ResearchInfo'
+import ResearchExperience from './components/ResearchExperience/ResearchExperience'
 
 export default function Research() {
   const { data } = useDataContext()
@@ -16,27 +18,15 @@ export default function Research() {
   } = data.main.research
 
   return (
-    <section className='research' id='research'>
+    <section className='research'>
       <Container>
-        <div className='research__content'>
-          <div className='research__title-wrapper'>
-            <h1 className='research__title title title--h1'>{titleText}</h1>
-          </div>
-          <div className='research__our-mission'>
-            <span className='paragraph paragraph--small'>{missionText}</span>
-          </div>
-          <ResearchSteps researchSteps={researchStepsArray} />
-          <div className='research__share-experience'>
-            <div className='research__share-experience-title'>
-              <h3 className='title title--h3'>{shareTitle}</h3>
-            </div>
-            <div className='research__share-experience-text'>
-              <span className='paragraph paragraph--small'>{shareText}</span>
-            </div>
-          </div>
-          <div className='research__total' id='results'>
-            <ResearchTotal />
-          </div>
+        <div className='research__content' id='research'>
+          <ResearchInfo
+            titleText={titleText}
+            missionText={missionText}
+            researchStepsArray={researchStepsArray}
+          />
+          <ResearchExperience shareText={shareText} shareTitle={shareTitle} />
         </div>
       </Container>
     </section>

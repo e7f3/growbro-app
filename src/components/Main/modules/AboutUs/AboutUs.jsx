@@ -8,7 +8,7 @@ import SecondaryInfo from './components/SecondaryInfo/SecondaryInfo'
 
 export default function AboutUs() {
   return (
-    <section className='about-us' id='idea'>
+    <section className='about-us'>
       <Container>
         <div className='about-us__content'>
           <MainInfo />

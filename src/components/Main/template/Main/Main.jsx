@@ -11,6 +11,8 @@ export default function Main() {
       <div className='main__content'>
         <MainBanner />
         <AboutUs />
+        <AboutUs />
+
         <Research />
       </div>
     </main>

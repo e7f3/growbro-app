@@ -1,6 +1,7 @@
 .about-us {
   width: 100%;
-  min-height: 2671px;
+  min-height: 2871px;
+  padding-bottom: 200px;
   background: var(--main-gradient--first), var(--main-gradient--second);
   position: relative;
 
@@ -9,13 +10,13 @@
   }
 
   @media only screen and (max-width: 1515px) {
-    padding-bottom: 200px;
+    padding-bottom: 400px;
   }
 
   @media only screen and (max-width: 900px) {
     min-height: unset;
-
     max-height: 1900px;
+    padding-bottom: 200px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -28,7 +29,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -200px;
+  bottom: 0;
 
   height: 800px;
 
@@ -39,16 +40,26 @@
 
   z-index: 1;
 
+  @media only screen and (max-width: 2560px) {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 1515px) {
+    height: 700px;
+  }
+
+  @media only screen and (max-width: 1375px) {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   @media only screen and (max-width: 900px) {
-    bottom: -150px;
-    height: 500px;
+    height: 400px;
   }
 
   @media only screen and (max-width: 600px) {
-    bottom: -118px;
     height: 335px;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -100,13 +111,13 @@
 }
 
 .about-us__content {
-  padding: 175px 0 398px;
+  padding: 0 0 398px;
 
   @media only screen and (max-width: 1515px) {
-    padding: 50px 0 398px;
+    padding: 0 0 398px;
   }
 
   @media only screen and (max-width: 600px) {
-    padding: 50px 0 0;
+    padding: 0 0 0;
   }
 }

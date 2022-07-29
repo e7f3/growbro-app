@@ -20,13 +20,13 @@ export default function Footer() {
     header: { menu: navigationLinkTexts },
   } = data
   return (
-    <footer className='footer'>
+    <footer className='footer' id='contact'>
       <Container>
         <div className='footer__content'>
           <div className='footer__title'>
             <h1 className='title title--h1'>{titleText}</h1>
           </div>
-          <div className='footer__contacts' id='contact'>
+          <div className='footer__contacts'>
             <div className='footer__telegram-link'>
               <TelegramIcon className='footer__telegram-icon' />
               <span className='paragraph paragraph--medium paragraph--bold'>
