@@ -1,18 +1,18 @@
-import './SecondaryInfo.scss'
+import './Info.scss'
 
 import React from 'react'
 import { useDataContext } from '../../../../../../hooks/useDataContext'
 
-export default function SecondaryInfo() {
+export default function Info() {
   const { data } = useDataContext()
   const { info: infoTextsArray } = data.main.about
   return (
-    <div className='secondary-info'>
-      <div className='secondary-info__content'>
+    <div className='info'>
+      <div className='info__content'>
         {infoTextsArray.map((infoText, index) => {
           const { type, text } = infoText
           return (
-            <div className='secondary-info__info-text' key={index}>
+            <div className='info__info-text' key={index}>
               <span
                 className={
                   type === 'subtitle'
@@ -25,6 +25,9 @@ export default function SecondaryInfo() {
             </div>
           )
         })}
+      </div>
+      <div className='info__bottom-img-wrapper'>
+        <div className='info__bottom-img' />
       </div>
     </div>
   )

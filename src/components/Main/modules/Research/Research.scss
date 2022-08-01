@@ -1,28 +1,24 @@
 .research {
-  padding: 0 0 156px;
   background-color: var(--white);
   position: relative;
 
   @media only screen and (max-width: 1515px) {
-    padding: 0 70px 156px;
+    padding: 0 4.375rem;
   }
-
   @media only screen and (max-width: 1050px) {
-    padding: 0 0 156px;
+    padding: 0 0 9.75rem;
   }
-
   @media only screen and (max-width: 900px) {
-    padding: 140px 0 50px;
+    padding: 0 0 5rem;
   }
-
   @media only screen and (max-width: 600px) {
-    padding: 118px 0 62px;
+    padding: 0 0 6.2rem;
   }
 }
 
 .research::after {
   content: '';
-  height: 1573px;
+  height: 75%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -31,23 +27,30 @@
   background-image: url('../../../../assets/images/research_background.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom right calc((100vw - 1920px) / 2);
+  background-position: bottom right;
   z-index: 0;
 
-  @media only screen and (max-width: 1515px) {
-    filter: blur(10px);
+  @media only screen and (max-width: 1920px) {
+    background-position: bottom right
+      calc((100vw - var(--max-container-width)) / 2);
   }
-
+  @media only screen and (max-width: 1515px) {
+    filter: blur(0.625rem);
+    background-position: bottom right -15rem;
+  }
+  @media only screen and (max-width: 900px) {
+    filter: blur(1rem);
+  }
   @media only screen and (max-width: 600px) {
-    height: 894px;
+    height: 90rem;
     background-size: cover;
-    background-position: bottom right -150px;
   }
 }
 
 .research__content {
-  max-width: 1365px;
+  max-width: 70vw;
   margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,4 +58,8 @@
 
   position: relative;
   z-index: 1;
+
+  @media only screen and (max-width: 2560px) {
+    max-width: 85.25rem;
+  }
 }

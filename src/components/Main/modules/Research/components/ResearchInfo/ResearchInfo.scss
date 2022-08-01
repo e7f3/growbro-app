@@ -5,20 +5,17 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 135px;
-
   scroll-snap-align: start;
 
   @media only screen and (max-width: 1375px) {
-    min-height: none;
+    min-height: unset;
+    padding-top: 8.5rem;
   }
-
   @media only screen and (max-width: 900px) {
-    padding-top: 60px;
+    padding-top: 6rem;
   }
-
   @media only screen and (max-width: 600px) {
-    padding-top: 50px;
+    padding-top: 5rem;
   }
 }
 
@@ -32,21 +29,21 @@
 
 .research-info__title-wrapper > .research-info__title {
   @media only screen and (max-width: 600px) {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 3rem;
+    line-height: 1.2;
   }
 }
 
 .research-info__our-mission {
-  max-width: 700px;
-  margin: 24px 0 35px;
-  padding: 23px 0;
+  max-width: 43.75rem;
+  margin: 1.5rem 0 2.25rem;
+  padding: 1.5rem 0;
 
   text-align: center;
   font-weight: 700;
 
   @media only screen and (max-width: 600px) {
-    margin: 12px 0 31px;
+    margin: 1.2rem 0 3rem;
     padding: 0;
   }
 }

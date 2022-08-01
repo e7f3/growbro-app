@@ -9,16 +9,16 @@
   --font-family--logo-icon: 'Fredoka', sans-serif;
 
   // Font sizes
-  --p--small: 1.1em;
-  --p--medium: 1.25em;
+  --p--small: 1.125rem;
+  --p--medium: 1.25rem;
 
-  --title--medium: 1.9em;
-  --title--large: 6.3em;
+  --title--medium: 1.875rem;
+  --title--large: 6.25rem;
 
   // Line heights
-  --line-height--paragraph: 120%;
-  --line-height--title-medium: 100%;
-  --line-height--title-large: 122%;
+  --line-height--paragraph: 1.4;
+  --line-height--title-medium: 1;
+  --line-height--title-large: 1.2;
 
   // Colors
   --green: #377724;
@@ -59,17 +59,17 @@
   :root {
     // Font sizes
 
-    --p--small: 11px;
-    --p--medium: 12px;
+    --p--small: 1.1rem;
+    --p--medium: 1.2rem;
 
-    --title--medium: 15px;
-    --title--large: 40px;
+    --title--medium: 1.5rem;
+    --title--large: 4rem;
 
     // Line heights
 
-    --line-height--paragraph: 19.5px;
-    --line-height--title-medium: 20px;
-    --line-height--title-large: 49px;
+    --line-height--paragraph: 1.8;
+    --line-height--title-medium: 1.33;
+    --line-height--title-large: 1.25;
   }
 }
 

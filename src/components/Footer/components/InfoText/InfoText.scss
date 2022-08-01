@@ -1,7 +1,11 @@
 .info-text {
   display: grid;
   grid-auto-flow: row;
-  row-gap: 3px;
+  row-gap: 0.25rem;
+
+  @media only screen and (max-width: 900px) {
+    row-gap: 0.4rem;
+  }
 }
 
 .info-text__subtitle {

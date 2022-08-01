@@ -6,32 +6,45 @@
   align-items: center;
 
   scroll-snap-align: start;
+
+  @media only screen and (max-width: 1515px) {
+    row-gap: 2.375rem;
+  }
+  @media only screen and (max-width: 1375px) {
+    min-height: unset;
+  }
+  @media only screen and (max-width: 900px) {
+    row-gap: 3.8rem;
+  }
 }
 
 .research-experience__share-experience {
-  margin-top: 104px;
-  padding: 13px 25px;
-  border-radius: 15px;
+  padding: 0.8125rem 1.5625rem;
+  border-radius: 1rem;
 
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: minmax(min-content, 275px) minmax(min-content, 700px);
-  column-gap: 30px;
+  grid-template-columns: minmax(min-content, 17.25rem) minmax(
+      min-content,
+      43.75rem
+    );
+  column-gap: 2rem;
 
   background-color: var(--green--80a);
 
+  @media only screen and (max-width: 1375px) {
+    margin: 6.5rem 0 0;
+  }
   @media only screen and (max-width: 1050px) {
-    margin: 104px 70px 0;
+    margin: 6.5rem 4.375rem 0;
     grid-auto-flow: row;
     grid-template-rows: max-content max-content;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 2rem;
   }
-
-  @media only screen and (max-width: 600px) {
-    margin: 25px 0 0;
-
-    row-gap: 15px;
+  @media only screen and (max-width: 900px) {
+    margin: 2.5rem 0 0;
+    row-gap: 1.5rem;
   }
 }
 
@@ -60,24 +73,25 @@
 }
 
 .research-experience__total {
-  //margin-top: 35px;
-  padding: 73px 35px 0 0;
-  margin-left: -100px;
+  padding: 4.5rem 2.25rem 0 0;
+  margin-left: -6.25rem;
   align-self: flex-start;
 
   @media only screen and (max-width: 1515px) {
-    border-radius: 15px;
+    border-radius: 1rem;
     background-color: var(--white--70a);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 85px 50px 70px;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    padding: 5.25rem 3.125rem 4.375rem;
+  }
+  @media only screen and (max-width: 1375px) {
+    margin-left: unset;
   }
   @media only screen and (max-width: 900px) {
     align-self: center;
     text-align: center;
-    background-color: unset;
-    box-shadow: unset;
+    padding: 3rem 2rem;
   }
   @media only screen and (max-width: 600px) {
-    padding: 35px 25px 0;
+    padding: 3rem 1rem 2rem;
   }
 }

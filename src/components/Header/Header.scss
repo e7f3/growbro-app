@@ -12,7 +12,7 @@
   grid-auto-flow: column;
   place-content: center space-between;
 
-  padding: 54px 0 25px;
+  padding: 3.4rem 0 1.5rem;
 
   @media only screen and (max-width: 1375px) {
     place-content: center;
@@ -26,6 +26,8 @@
 }
 
 .header__navigation {
+  display: flex;
+  align-items: center;
   @media only screen and (max-width: 1375px) {
   }
 }

@@ -1,48 +1,35 @@
 .research-total {
+  max-width: 39.75rem;
+
   display: grid;
   grid-auto-flow: row;
   grid-auto-rows: max-content;
-  row-gap: 40px;
-
-  max-width: 635px;
+  row-gap: 2.5rem;
 
   @media only screen and (max-width: 900px) {
-    row-gap: 28px;
-    padding: 30px 20px 30px;
-    border-radius: 15px;
-    background-color: var(--white--70a);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  @media only screen and (max-width: 600px) {
-    padding: 30px 10px 20px;
+    row-gap: 2.8rem;
   }
 }
 
 .research-total__title {
   font-weight: 100;
   .title {
-    line-height: 101px;
+    line-height: 1;
 
     @media only screen and (max-width: 900px) {
-      line-height: 49px;
+      line-height: 1.25;
     }
     @media only screen and (max-width: 600px) {
-      font-weight: 30px;
-      line-height: 37px;
+      font-size: 3rem;
     }
   }
 }
 
 .research-total__text-wrapper {
-  max-width: 590px;
+  max-width: 36.875rem;
 }
 
 .research-total__text-title {
-  margin: 30px 0;
+  margin: 2rem 0;
   font-weight: 600;
-
-  @media only screen and (max-width: 600px) {
-    margin: 20px 0;
-  }
 }
